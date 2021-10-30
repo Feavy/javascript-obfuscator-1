@@ -24,7 +24,7 @@ export abstract class AbstractIdentifierNamesGenerator implements IIdentifierNam
     /**
      * @type {Set<string>}
      */
-    protected readonly preservedNamesSet: Set<string> = new Set();
+    protected preservedNamesSet: Set<string> = new Set();
 
     /**
      * @type {Map<TNodeWithLexicalScope, Set<string>>}
@@ -41,6 +41,7 @@ export abstract class AbstractIdentifierNamesGenerator implements IIdentifierNam
     ) {
         this.randomGenerator = randomGenerator;
         this.options = options;
+        this.preservedNamesSet = new Set(options.exactReservedNames);
     }
 
     /**

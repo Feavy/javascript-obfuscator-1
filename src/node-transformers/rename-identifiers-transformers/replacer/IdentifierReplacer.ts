@@ -150,13 +150,6 @@ export class IdentifierReplacer implements IIdentifierReplacer {
      * @returns {boolean}
      */
     private isReservedName (name: string): boolean {
-        if (!this.options.reservedNames.length) {
-            return false;
-        }
-
-        return this.options.reservedNames
-            .some((reservedName: string) => {
-                return new RegExp(reservedName, 'g').exec(name) !== null;
-            });
+        return !this.identifierNamesGenerator.isValidIdentifierName(name);
     }
 }

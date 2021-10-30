@@ -33,6 +33,7 @@ export const NO_ADDITIONAL_NODES_PRESET: TInputOptions = Object.freeze({
     renameProperties: false,
     renamePropertiesMode: RenamePropertiesMode.Safe,
     reservedNames: [],
+    exactReservedNames: [],
     reservedStrings: [],
     stringArrayRotate: false,
     seed: 0,

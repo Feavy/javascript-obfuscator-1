@@ -36,6 +36,7 @@ export interface IOptions {
     readonly renameProperties: boolean;
     readonly renamePropertiesMode: TRenamePropertiesMode;
     readonly reservedNames: string[];
+    readonly exactReservedNames: string[];
     readonly reservedStrings: string[];
     readonly seed: string | number;
     readonly selfDefending: boolean;

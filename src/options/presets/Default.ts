@@ -37,6 +37,7 @@ export const DEFAULT_PRESET: TInputOptions = Object.freeze({
     renameProperties: false,
     renamePropertiesMode: RenamePropertiesMode.Safe,
     reservedNames: [],
+    exactReservedNames: [],
     reservedStrings: [],
     stringArrayRotate: true,
     seed: 0,

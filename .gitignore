@@ -2,7 +2,6 @@
 .idea
 .nyc_output
 coverage
-/dist
 /typings
 npm-debug.log
 *.js.map
